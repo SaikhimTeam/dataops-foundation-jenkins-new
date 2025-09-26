@@ -30,7 +30,7 @@
 ### **ขั้นตอนที่ 1: เตรียม Docker**
 ```bash
 # รัน Jenkins ใน Docker
-docker run -d --name jenkins-python --restart unless-stopped -e TZ=Asia/Bangkok -p 8080:8080 -p 50000:50000 -v jenkins-data:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock jenkins-python:latest
+docker run -d --name jenkins-python --restart unless-stopped -e TZ=Asia/Bangkok -p 8080:8080 -p 50000:50000 -v jenkins-data:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock amornpan/jenkins-python:latest
 ```
 
 ### **ขั้นตอนที่ 2: เข้า Jenkins**
